@@ -1,0 +1,39 @@
+<uib-tabset active="$tabSetStatus.activeTab">
+  <uib-tab heading="Mark Attendance">
+    <div class="col-lg-12 col-md-12">
+      <div ba-panel ba-panel-title="Student Attendance" ba-panel-class="with-scroll table-panel">
+        <div include-with-scope="app/pages/attendance/widgets/markStudentsAttendance.html"></div>
+      </div>
+    </div>
+
+  </uib-tab>
+  <uib-tab heading="Attendance Report">
+    <div ba-panel ba-panel-title="Student Report" ba-panel-class="with-scroll table-panel">
+    <div include-with-scope="app/pages/attendance/widgets/studentsAttendanceReport.html"></div>
+      </div>
+  </uib-tab>
+ <!-- <uib-tab ng-init="$dropdownTabActive = 1" class="with-dropdown">
+    <uib-tab-heading uib-dropdown>
+      <a uib-dropdown-toggle ng-click="$event.stopPropagation()">
+        Dropdown tab <i class="caret"></i>
+      </a>
+      <ul class="dropdown-menu" uib-dropdown-menu>
+        <li><a ng-click="$dropdownTabActive = 1; $tabSetStatus.activeTab = 3">Tab 1</a></li>
+        <li><a ng-click="$dropdownTabActive = 2; $tabSetStatus.activeTab = 3">Tab 2</a></li>
+      </ul>
+    </uib-tab-heading>
+    <div ng-show="$dropdownTabActive == 1">
+      <p>
+        Success is ... knowing your purpose in life, growing to reach your maximum potential, and sowing seeds that
+        benefit others.
+      </p>
+
+      <p>Failure is the condiment that gives success its flavor.</p>
+    </div>
+    <div ng-show="$dropdownTabActive == 2">
+      <p class="text-center">
+        <button class="btn btn-danger">I'm just a dummy button</button>
+      </p>
+    </div>
+  </uib-tab>-->
+</uib-tabset>
